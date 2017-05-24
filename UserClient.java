@@ -15,10 +15,10 @@ public class UserClient{
       BufferedReader reader = new BufferedReader(new InputStreamReader (System.in));
       try{
       //SQL Connection
-      String db_username="ams185", password = "mr17lFGh";
+      String db_username="oracle_username", password = "oracle_password";
       DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
       conn = DriverManager.getConnection (
-                   "jdbc:oracle:thin:@oracle1.wiu.edu:1521/toolman.wiu.edu",
+                   "oracle_url",
 		             db_username, password);
       conn.setAutoCommit(true);
       
