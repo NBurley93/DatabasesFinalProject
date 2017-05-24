@@ -19,7 +19,7 @@ public class AdminClient {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try {
             //Oracle connection
-            String db_username="ams185", password = "mr17lFGh";
+            String db_username="oracle_username", password = "oracle_password";
             DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
             c = DriverManager.getConnection (
                    "jdbc:oracle:thin:@oracle1.wiu.edu:1521/toolman.wiu.edu",
