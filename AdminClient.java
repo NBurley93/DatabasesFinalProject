@@ -22,7 +22,7 @@ public class AdminClient {
             String db_username="oracle_username", password = "oracle_password";
             DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
             c = DriverManager.getConnection (
-                   "jdbc:oracle:thin:@oracle1.wiu.edu:1521/toolman.wiu.edu",
+                   "oracle_url",
 		             db_username, password);
             c.setAutoCommit(false);
             
